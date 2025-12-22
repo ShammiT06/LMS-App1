@@ -5,15 +5,12 @@ import { TextInput } from 'react-native'
 import { FontAwesome, Ionicons } from '@expo/vector-icons'
 import LoginStyles from '../../assets/Styles/auth-styles/Login'
 import { router } from 'expo-router'
+
 export default function index() {
     const [eyeopen, setEyeopen] = useState(false)
-
-
     const navigate = () =>{
         router.push("/(guest)")
     }
-
-
 
     return (
         <SafeAreaView style={LoginStyles.container}>
