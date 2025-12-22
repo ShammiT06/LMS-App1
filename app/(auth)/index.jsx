@@ -39,7 +39,7 @@ export default function index() {
                         )}
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={LoginStyles.button}>
+                <TouchableOpacity style={LoginStyles.button} onPress={()=>{router.push("/(tabs)")}}>
                     <Text style={LoginStyles.buttonText}>Sign In</Text>
                 </TouchableOpacity>
                 <View style={LoginStyles.Forgot}>
